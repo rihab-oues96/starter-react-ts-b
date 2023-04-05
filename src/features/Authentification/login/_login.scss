@@ -1,0 +1,89 @@
+.login-form-container {
+  max-width: 400px;
+  margin: 10rem auto;
+  border: 1px solid rgb(73, 71, 190);
+  border-radius: 8px;
+  padding: 3rem;
+  h1 {
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      align-self: flex-start;
+      padding-left: 0.5rem;
+    }
+
+    .form-control {
+      width: calc(100% - 2rem);
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+      &:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+    }
+
+    .is-invalid {
+      border-color: #dc3545;
+
+      &:focus {
+        border-color: #dc3545;
+        box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+      }
+    }
+
+    .invalid-feedback {
+      color: #dc3545;
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 80%;
+    }
+  }
+
+  button[type='submit'] {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #007bff;
+    background-image: none;
+    border: 1px solid #007bff;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    }
+  }
+}

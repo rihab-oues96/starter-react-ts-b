@@ -1,0 +1,41 @@
+$error-page-color: #f44336;
+$error-page-background-color: #f7f7f7;
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $error-page-background-color;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $error-page-color;
+  }
+
+  &__message {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: $error-page-color;
+    text-align: center;
+  }
+
+  &__link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $error-page-color;
+    border: 2px solid $error-page-color;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $error-page-color;
+      color: white;
+    }
+  }
+}
